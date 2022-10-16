@@ -1,0 +1,96 @@
+/* General Reset */
+h5, h6 {margin:0;}
+
+
+
+/* – – – NAVIGATION – – – */
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #3D9FDE;
+}
+
+/* Container for navigation links (inserted by javascript) */
+.navigation__links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navigation__info {
+    width: fit-content;
+}
+.navigation__info a {
+    display: block;
+}
+
+.navbar-menu-item {
+    font-size: 0.88rem;
+}
+@media screen and (max-width: 600px) {
+    .navbar-menu-item, .dropdown button {
+        font-size: 1.2rem;
+    }
+    
+}
+header, main {
+    max-width: 1276px; /* value matches previews max size before site was made responsive */
+    margin: 0 auto;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.schematic {
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+
+/* - - - Values - - - */
+
+.values {
+    width: 152px;
+}
+
+    .value, .values__labels {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        height: 1.5rem;
+        align-items: center;
+        padding: 5px;
+        border-top: 1px solid #ddd;
+    }
+    .values__labels .tonestack-value-th-value {
+        text-align: center;
+    }
+
+        .value__unit {
+            display: inline;
+            font-weight: normal;
+            margin: 0;
+        }
+
+
+
+
+
+ 
+
+
+/* toggle amplitude/phase button - Animation effect */
+.toggle {
+    width: 42px;
+}
+
+.toggle:before {
+    transition: all 200ms;
+    left: 3px;
+}
+.toggle:checked:before {
+    left: 21px;
+}
